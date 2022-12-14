@@ -4,7 +4,7 @@ module.exports = function (app) {
   app.use(
     "/api",
     createProxyMiddleware({
-      target: "https://predictor-api-e5jr.onrender.com/",
+      target: "https://predictor-api-e5jr.onrender.com",
       changeOrigin: true,
     })
   );
