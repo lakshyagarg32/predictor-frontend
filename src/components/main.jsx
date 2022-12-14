@@ -19,7 +19,7 @@ function Main() {
     const category = event.target.category.value;
     const domicile_state = event.target.domicile_state.value;
     try {
-      const res = await axios.post("/api/test", {
+      const res = await axios.post("https://predictor-api-e5jr.onrender.com/api/test", {
         rank: rank,
         gender: gender,
         category: category,
