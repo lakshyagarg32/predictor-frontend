@@ -1,0 +1,46 @@
+.result {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+h1,
+p {
+  font-family: Lato;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+}
+
+thead tr th {
+  font-weight: 500;
+  text-align: left;
+  background-color: #d3d3d3;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eae9e9;
+}
+tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+th,
+td {
+  padding: 8px;
+  overflow-wrap: break-word;
+}
+
+.pagination-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+select {
+  width: 50%;
+  overflow: auto;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 300;
+}
