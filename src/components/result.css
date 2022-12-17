@@ -1,10 +1,9 @@
 .result {
-  margin-left: 2%;
-  margin-right: 2%;
+  margin: auto 2%;
 }
 @media screen and (max-width: 820px) {
   .result{
-    margin: 0px;
+    margin: auto;
   }
 }
 h1,

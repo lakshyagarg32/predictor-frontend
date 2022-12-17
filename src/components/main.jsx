@@ -48,6 +48,7 @@ function Main() {
     <div>
       {loading ? (
         <ReactLoading
+        className="loading"
         type="spinningBubbles"
         color="#FFFFFF"
         height={100}
