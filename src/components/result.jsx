@@ -34,6 +34,23 @@ function Result() {
           value: branch,
         });
       });
+      a.sort((x, y) => {
+        let fa = x.label.toLowerCase(),
+          fb = y.label.toLowerCase();
+        if (fa == "all branches") {
+          return -1;
+        }
+        if (fb == "all branches") {
+          return 1;
+        }
+        if (fa < fb) {
+          return -1;
+        }
+        if (fa > fb) {
+          return 1;
+        }
+        return 0;
+      });
       return a;
     });
     setAllColleges(() => {
@@ -47,6 +64,23 @@ function Result() {
           label: clg,
           value: clg,
         });
+      });
+      a.sort((x, y) => {
+        let fa = x.label.toLowerCase(),
+          fb = y.label.toLowerCase();
+        if (fa == "all institutes") {
+          return -1;
+        }
+        if (fb == "all institutes") {
+          return 1;
+        }
+        if (fa < fb) {
+          return -1;
+        }
+        if (fa > fb) {
+          return 1;
+        }
+        return 0;
       });
       return a;
     });
