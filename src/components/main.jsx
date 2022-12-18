@@ -56,7 +56,7 @@ function Main() {
       />
       ) : (
         <div className="container">
-          <header>College Predictor</header>
+          <header>College <span className="display_name">जांच</span></header>
           <ProgressBar
             progressCheck={progressCheck}
             progressText={progressText}
